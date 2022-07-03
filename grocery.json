@@ -1,0 +1,83 @@
+{ "grocery":[
+    {
+        "Slno": "1" ,
+        "Name": "Milk",
+        "Ouantity": "1", 
+        "Unit": "Ltr",
+        "Department": "Dairy",
+        "Notes": "Full Cream"
+
+    },
+    {
+        "Slno": "2" ,
+        "Name": "Rice",
+        "Ouantity": "1", 
+        "Unit": "KG",
+        "Department": "Grains",
+        "Notes": "Matta"
+
+    },
+    {
+        "Slno": "3" ,
+        "Name": "Wheat",
+        "Ouantity": "5", 
+        "Unit": "KG",
+        "Department": "Grains",
+        "Notes": "Atta"
+
+    },
+    {
+        "Slno": "4" ,
+        "Name": "Eggs",
+        "Ouantity": "30", 
+        "Unit": "-",
+        "Department": "Poultry",
+        "Notes": "Medium White"
+
+    },
+    {
+        "Slno": "5" ,
+        "Name": "Yogurt",
+        "Ouantity": "1", 
+        "Unit": "Ltr",
+        "Department": "Dairy",
+        "Notes": "Full Fat"
+
+    },
+    {
+        "Slno": "6" ,
+        "Name": "Biscuits",
+        "Ouantity": "1", 
+        "Unit": "Packet",
+        "Department": "Snacks",
+        "Notes": "Marie"
+
+    },
+    {
+        "Slno": "7" ,
+        "Name": "Apple",
+        "Ouantity": "1/2", 
+        "Unit": "kg",
+        "Department": "Fruits & Vegetables",
+        "Notes": "Red"
+
+    },
+    {
+        "Slno": "8" ,
+        "Name": "Banana",
+        "Ouantity": "1/2", 
+        "Unit": "kg",
+        "Department": "Fruits & Vegetables",
+        "Notes": "Green"
+
+    },
+    {
+        "Slno": "9" ,
+        "Name": "Onion",
+        "Ouantity": "2", 
+        "Unit": "kg",
+        "Department": "Fruits & Vegetables",
+        "Notes": "-"
+
+    }
+]}
