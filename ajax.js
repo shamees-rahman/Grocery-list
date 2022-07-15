@@ -1,15 +1,13 @@
 function ajax(){
     var xhttp = new XMLHttpRequest();
-    // Eventlistener
     
     xhttp.onreadystatechange = function()
     {
-        // condition
         if(this.readyState==4&&this.status==200)
         {
-            var deptarr = [];
             var responses = JSON.parse(this.responseText);
             var Jgrocery = responses.grocery;
+            var deptarr = [];
             var header= "<table><tr><th>No.</th><th>Name</th><th>Quantity</th><th>Unit</th><th>Department</th><th>Notes</th></tr>";
             var body="";
             var dropdown="<select id='framework'><option value='1'>All</option>";
@@ -26,22 +24,18 @@ function ajax(){
                 </tr>`;
             }
             var deptset = new Set(deptarr);
-            for (let setting of deptset) 
+            for (let depts of deptset) 
             {
-            dropdown+=`<option value="${setting}">${setting}</option>`;}
+            dropdown+=`<option value="${depts}">${depts}</option>`;}
             dropdown+="</select><button id='btn'>Get the Selected Department</button>";
             var output = dropdown + header + body;
             document.getElementById("table_body").innerHTML = output;
-            var counting = 0;
             var btn = document.getElementById('btn');
             var dept = document.getElementById('framework');
             
             
             btn.onclick = (event) => {
-                // event.preventDefault();
-                counting++;
                 console.log(dept.value);
-                // document.getElementById("table_body").innerHTML = slice;
                 
                 if (dept.value!=1){
                     var slice = "<select id='framework'><option value='1'>All</option><option value='Dairy'>Dairy</option><option value='Grains'>Grains</option><option value='Poultry'>Poultry</option><option value='Snacks'>Snacks</option><option value='Fruits & Vegetables'>Fruits & Vegetables</option></select><button id='btn'>Get the Selected Department</button><table> <tr><th>No.</th><th>Name</th><th>Quantity</th><th>Unit</th><th>Department</th><th>Notes</th></tr>";
